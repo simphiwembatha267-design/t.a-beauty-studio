@@ -1,16 +1,16 @@
-import s1 from "@/assets/salon-1.jpg.asset.json";
-import s2 from "@/assets/salon-2.jpg.asset.json";
-import s3 from "@/assets/salon-3.jpg.asset.json";
-import s4 from "@/assets/salon-4.jpg.asset.json";
-import s5 from "@/assets/salon-5.jpg.asset.json";
+import s1 from "@/assets/look-inside-1.jpg.asset.json";
+import s2 from "@/assets/look-inside-2.jpg.asset.json";
+import s3 from "@/assets/look-inside-3.jpg.asset.json";
+import s4 from "@/assets/look-inside-4.jpg.asset.json";
+import s5 from "@/assets/look-inside-5.jpg.asset.json";
 import { Reveal } from "./Reveal";
 
 const shots = [
-  { url: s4.url, alt: "Fluted wood reception desk with floral wallpaper at Moonlight Beauty Salon" },
-  { url: s2.url, alt: "Row of white styling stations with tall mirrors and tan chairs" },
-  { url: s1.url, alt: "Client lounge with a terracotta velvet sofa, pampas grass and framed art" },
-  { url: s3.url, alt: "Salon floor with styling mirrors and black wash basins" },
-  { url: s5.url, alt: "Waiting corner with tan chairs, velvet stool and a soft pink wall" },
+  { url: s1.url, alt: "Inside T.A Beauty Studio — styling area" },
+  { url: s2.url, alt: "Inside T.A Beauty Studio — salon interior" },
+  { url: s3.url, alt: "Inside T.A Beauty Studio — treatment space" },
+  { url: s4.url, alt: "Inside T.A Beauty Studio — client seating" },
+  { url: s5.url, alt: "Inside T.A Beauty Studio — studio detail" },
 ];
 
 export function SalonStrip() {
