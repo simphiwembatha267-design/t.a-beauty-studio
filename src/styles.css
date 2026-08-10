@@ -63,7 +63,7 @@
   --taupe: oklch(0.66 0.032 58);
   --ink: oklch(0.28 0.014 52);
 
-  --background: oklch(0.977 0.009 78);
+  --background: #F7F3ED;
   --foreground: oklch(0.28 0.014 52);
   --card: oklch(0.992 0.005 84);
   --card-foreground: oklch(0.28 0.014 52);
