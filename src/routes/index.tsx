@@ -11,21 +11,26 @@ import { services, testimonials, salon } from "@/lib/salon-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    meta: [
-      { title: "Moonlight Beauty Salon | Hair, Braids & Nails in Umlazi" },
-      {
-        name: "description",
-        content:
-          "Moonlight Beauty Salon in Umlazi, KwaZulu-Natal. Hair, braids, dreadlocks, wigs, nails and makeup in a calm, luxurious studio. Book your appointment online.",
-      },
-      { property: "og:title", content: "Moonlight Beauty Salon | Reveal Your Natural Beauty" },
-      {
-        property: "og:description",
-        content:
-          "Professional hair, braids, nails and makeup in a relaxing Umlazi studio. Book your appointment online.",
-      },
-    ],
-  }),
+  meta: [
+    {
+      title: "T.A Beauty Studio | Hair, Braids, Nails & Makeup in Durban",
+    },
+    {
+      name: "description",
+      content:
+        "T.A Beauty Studio in Morningside, Durban. Professional hair, braids, dreadlocks, wigs, nails and makeup in a calm, modern beauty studio. Book your appointment online.",
+    },
+    {
+      property: "og:title",
+      content: "T.A Beauty Studio | Durban",
+    },
+    {
+      property: "og:description",
+      content:
+        "Professional hair, braids, nails and makeup at T.A Beauty Studio in Morningside, Durban. Book your appointment online.",
+    },
+  ],
+}),
   component: Home,
 });
 
