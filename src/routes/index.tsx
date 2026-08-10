@@ -41,49 +41,57 @@ function Home() {
       <section className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
         <MoonDecor />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
-          <div className="animate-rise">
-            <span className="eyebrow">Umlazi · KwaZulu-Natal</span>
-            <h1 className="mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-              Find Your
-              <span className="block italic text-taupe">Glow</span>
-            </h1>
-            <p className="mt-4 text-sm tracking-[0.16em] uppercase text-muted-foreground">
-              Reveal your natural beauty
-            </p>
-            <p className="mt-6 text-sm tracking-[0.16em] uppercase text-muted-foreground">
-              Hair · Braids · Nails · Makeup · Beauty Treatments
-            </p>
-            <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              Experience professional beauty services in a relaxing environment where every
-              appointment is crafted around you.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link
-                to="/book"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-primary-foreground transition-all duration-500 hover:bg-ink hover:shadow-soft"
-              >
-                Book Appointment <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                to="/services"
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-foreground transition-all duration-500 hover:border-blush"
-              >
-                View Services
-              </Link>
-            </div>
-            <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-4 text-xs text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Star className="h-4 w-4 fill-current text-taupe" />
-                <dt className="sr-only">Rating</dt>
-                <dd>4.9 from 180+ clients</dd>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-taupe" />
-                <dt className="sr-only">Hours</dt>
-                <dd>Open daily 09:00 – 18:00</dd>
-              </div>
-            </dl>
-          </div>
+          <<div className="animate-rise">
+  <span className="eyebrow">Morningside · Durban</span>
+
+  <h1 className="mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
+    Beauty,
+    <span className="block italic text-taupe">Beautifully Done.</span>
+  </h1>
+
+  <p className="mt-4 text-sm tracking-[0.16em] uppercase text-muted-foreground">
+    T.A Beauty Studio
+  </p>
+
+  <p className="mt-6 text-sm tracking-[0.16em] uppercase text-muted-foreground">
+    Hair · Braids · Nails · Makeup · Beauty Treatments
+  </p>
+
+  <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
+    A refined beauty studio in the heart of Morningside, Durban,
+    where expert beauty services meet a calm, elevated experience.
+  </p>
+
+  <div className="mt-9 flex flex-wrap gap-3">
+    <Link
+      to="/book"
+      className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-primary-foreground transition-all duration-500 hover:bg-ink hover:shadow-soft"
+    >
+      Book Appointment <ArrowRight className="h-4 w-4" />
+    </Link>
+
+    <Link
+      to="/services"
+      className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-foreground transition-all duration-500 hover:border-blush"
+    >
+      View Services
+    </Link>
+  </div>
+
+  <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-4 text-xs text-muted-foreground">
+    <div className="flex items-center gap-2">
+      <MapPin className="h-4 w-4 text-taupe" />
+      <dt className="sr-only">Location</dt>
+      <dd>Morningside, Durban</dd>
+    </div>
+
+    <div className="flex items-center gap-2">
+      <Clock className="h-4 w-4 text-taupe" />
+      <dt className="sr-only">Hours</dt>
+      <dd>Mon – Fri 08:30 – 18:00 · Sat – Sun 08:30 – 19:00</dd>
+    </div>
+  </dl>
+</div>
 
           <div className="relative">
             <div className="overflow-hidden rounded-[2.5rem] border border-border/70 shadow-soft">
