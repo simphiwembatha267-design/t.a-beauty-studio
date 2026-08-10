@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Phone, Mail, MessageCircle } from "lucide-react";
-import logo from "@/assets/moonlight-logo.png.asset.json";
+import logo from "@/assets/ta-beauty-studio-logo.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
 export function SiteFooter() {
