@@ -57,7 +57,7 @@
 :root {
   --radius: 1rem;
 
-  --cream: oklch(0.973 0.011 76);
+  --cream: #FAF8F3;
   --sand: oklch(0.925 0.018 72);
   --blush: oklch(0.868 0.031 44);
   --taupe: oklch(0.66 0.032 58);
