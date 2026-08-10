@@ -89,7 +89,7 @@
   #F7F3ED 55%,
   #EFE8DE 100%
 );
-  --gradient-blush: linear-gradient(135deg, oklch(0.93 0.02 62), oklch(0.87 0.032 42));
+  --gradient-blush: linear-gradient(135deg, #F7F3ED, #E9E0D4);
   --shadow-soft: 0 18px 50px -32px oklch(0.45 0.03 52 / 0.32);
   --shadow-lift: 0 26px 70px -34px oklch(0.45 0.03 52 / 0.4);
   --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
