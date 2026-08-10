@@ -81,7 +81,7 @@
   --destructive-foreground: oklch(0.982 0.008 80);
   --border: #E3D9CC;
   --input: #E3D9CC;
-  --ring: oklch(0.72 0.03 55);
+  --ring: #C9B18F;
 
   --gradient-veil: linear-gradient(
   160deg,
