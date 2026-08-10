@@ -186,22 +186,22 @@ export const testimonials = [
 
 export const salon = {
   name: "T.A Beauty Studio",
-  phone: "+27 31 000 0000",
-  phoneHref: "tel:+27310000000",
-  whatsapp: "https://wa.me/27310000000",
-  email: "hello@moonlightbeauty.co.za",
-  instagram: "https://instagram.com",
+  phone: "+27 65 870 3801",
+  phoneHref: "tel:+27658703801",
+  whatsapp: "https://wa.me/27658703801",
+  email: "",
+  instagram: "https://instagram.com/tabeautystudio_",
   address: [
-    "223 Kwamnyandu Shopping Centre",
-    "341 Griffiths Mxenge Highway",
-    "Umlazi, KwaZulu-Natal",
+    "87 Smiso Nkwanyana Road",
+    "Morningside",
+    "Durban, KwaZulu-Natal",
     "South Africa",
   ],
-  hours: "Monday – Sunday · 09:00 – 18:00",
+  hours: "Monday – Friday · 08:30 – 18:00",
+  weekendHours: "Saturday – Sunday · 08:30 – 19:00",
   mapEmbed:
-    "https://www.google.com/maps?q=Kwamnyandu+Shopping+Centre,+341+Griffiths+Mxenge+Highway,+Umlazi&output=embed",
+    "https://www.google.com/maps?q=87+Smiso+Nkwanyana+Road,+Morningside,+Durban&output=embed",
 };
-
 export const timeSlots = [
   "09:00",
   "09:30",
