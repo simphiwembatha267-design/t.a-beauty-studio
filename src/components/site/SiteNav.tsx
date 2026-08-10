@@ -125,8 +125,8 @@ export function SiteNav() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={260}
-            height={146}
+            width={240}
+            height={240}
             className="h-14 w-auto shrink-0 sm:h-[4.5rem]"
           />
         </Link>

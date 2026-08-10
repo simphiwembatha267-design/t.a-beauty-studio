@@ -11,8 +11,8 @@ export function SiteFooter() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={300}
-            height={169}
+            width={240}
+            height={240}
             loading="lazy"
             className="h-20 w-auto"
           />
