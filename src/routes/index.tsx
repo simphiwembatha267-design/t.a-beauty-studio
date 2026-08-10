@@ -41,7 +41,7 @@ function Home() {
       <section className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
         <MoonDecor />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
-          <<div className="animate-rise">
+          <div className="animate-rise">
   <span className="eyebrow">Morningside · Durban</span>
 
   <h1 className="mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
