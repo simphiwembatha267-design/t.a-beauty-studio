@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Phone, Mail, MessageCircle } from "lucide-react";
-import logo from "@/assets/moonlight-logo.png.asset.json";
+import logo from "@/assets/ta-beauty-studio-logo.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
 export function SiteFooter() {
@@ -11,8 +11,8 @@ export function SiteFooter() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={300}
-            height={169}
+            width={240}
+            height={240}
             loading="lazy"
             className="h-20 w-auto"
           />
