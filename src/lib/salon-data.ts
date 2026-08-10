@@ -185,7 +185,7 @@ export const testimonials = [
 ];
 
 export const salon = {
-  name: "Moonlight Beauty Salon",
+  name: "T.A Beauty Studio",
   phone: "+27 31 000 0000",
   phoneHref: "tel:+27310000000",
   whatsapp: "https://wa.me/27310000000",
