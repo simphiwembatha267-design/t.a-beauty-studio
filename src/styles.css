@@ -84,11 +84,11 @@
   --ring: oklch(0.72 0.03 55);
 
   --gradient-veil: linear-gradient(
-    160deg,
-    oklch(0.986 0.007 82) 0%,
-    oklch(0.955 0.015 70) 55%,
-    oklch(0.918 0.025 50) 100%
-  );
+  160deg,
+  #FAF8F3 0%,
+  #F7F3ED 55%,
+  #EFE8DE 100%
+);
   --gradient-blush: linear-gradient(135deg, oklch(0.93 0.02 62), oklch(0.87 0.032 42));
   --shadow-soft: 0 18px 50px -32px oklch(0.45 0.03 52 / 0.32);
   --shadow-lift: 0 26px 70px -34px oklch(0.45 0.03 52 / 0.4);
