@@ -94,7 +94,7 @@
   --shadow-lift: 0 26px 70px -34px oklch(0.45 0.03 52 / 0.4);
   --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
 
-  --sidebar: oklch(0.977 0.009 78);
+  --sidebar: #F7F3ED;
   --sidebar-foreground: oklch(0.28 0.014 52);
   --sidebar-primary: oklch(0.45 0.026 52);
   --sidebar-primary-foreground: oklch(0.982 0.008 80);
