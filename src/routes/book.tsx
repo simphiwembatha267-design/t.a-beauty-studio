@@ -29,7 +29,12 @@ function BookPage() {
   return (
     <section className="relative overflow-hidden pt-32 sm:pt-40">
       <MoonDecor />
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div className="animate-float-slow absolute left-1/4 top-1/3 h-80 w-80 -translate-x-1/2 rounded-full bg-blush/70 blur-3xl" />
+        <div className="animate-drift absolute right-0 top-2/3 h-72 w-72 rounded-full bg-taupe/40 blur-3xl" />
+      </div>
       <div className="relative mx-auto max-w-4xl px-5 pb-24 sm:px-8 lg:pb-32">
+
         <div className="mb-10 text-center">
           <span className="eyebrow">Booking</span>
           <h1 className="mt-5 text-5xl sm:text-6xl">Reserve your moment</h1>
