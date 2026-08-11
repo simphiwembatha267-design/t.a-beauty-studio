@@ -11,10 +11,10 @@ export function SiteFooter() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={240}
-            height={240}
+            width={678}
+            height={991}
             loading="lazy"
-            className="h-20 w-auto"
+            className="h-32 w-auto sm:h-36"
           />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
             A quiet, considered beauty studio in Umlazi where hair, nails and makeup are crafted
