@@ -77,7 +77,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
   };
 
   return (
-    <div className="rounded-[2rem] border border-border/80 bg-card/80 p-5 shadow-soft backdrop-blur-sm sm:p-9">
+    <div className="glass-panel rounded-[2rem] p-5 sm:p-9">
       {/* Progress */}
       <ol className="flex items-center gap-2 overflow-x-auto pb-1" aria-label="Booking steps">
         {steps.map((label, i) => (
@@ -121,7 +121,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                   className={`group rounded-3xl border p-5 text-left transition-all duration-500 active:scale-[0.98] ${
                     service?.id === s.id
                       ? "border-taupe bg-secondary/70"
-                      : "border-border/80 bg-background hover:border-blush hover:bg-secondary/40"
+                      : "glass-inset hover:border-blush hover:bg-secondary/40"
                   }`}
                 >
                   <h3 className="text-2xl">{s.name}</h3>
@@ -149,7 +149,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                   className={`flex items-center gap-4 rounded-3xl border p-4 text-left transition-all duration-500 active:scale-[0.98] ${
                     specialist?.id === p.id
                       ? "border-taupe bg-secondary/70"
-                      : "border-border/80 bg-background hover:border-blush"
+                      : "glass-inset hover:border-blush"
                   }`}
                 >
                   <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl blush-veil font-display text-xl text-ink">
@@ -192,7 +192,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                   className={`rounded-2xl border py-4 text-sm tracking-wide transition-all duration-500 active:scale-95 ${
                     time === t
                       ? "-translate-y-1 border-transparent bg-primary text-primary-foreground shadow-soft"
-                      : "border-border/80 bg-background text-foreground hover:border-blush"
+                      : "glass-inset text-foreground hover:border-blush"
                   }`}
                 >
                   {t}
@@ -237,7 +237,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                   value={details.notes}
                   onChange={(e) => setDetails({ ...details, notes: e.target.value })}
                   placeholder="Hair length, inspiration, allergies…"
-                  className="mt-2 w-full rounded-2xl border border-border bg-background px-4 py-3.5 text-sm outline-none transition-colors duration-500 placeholder:text-muted-foreground/70 focus:border-taupe"
+                  className="mt-2 w-full rounded-2xl border border-border bg-background/50 px-4 py-3.5 text-sm backdrop-blur-md outline-none transition-colors duration-500 placeholder:text-muted-foreground/70 focus:border-taupe"
                 />
               </label>
             </div>
@@ -246,7 +246,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
 
         {step === 5 && service && (
           <StepShell title="Review your appointment" hint="One last look before we save it.">
-            <dl className="divide-y divide-border/70 rounded-3xl border border-border/80 bg-background/70 px-6">
+            <dl className="glass-inset divide-y divide-border/50 rounded-3xl px-6">
               <Row label="Service" value={service.name} />
               <Row label="Specialist" value={specialist?.name ?? "Next available artist"} />
               <Row label="Date" value={date ? format(date, "EEEE d MMMM yyyy") : "—"} />
@@ -341,7 +341,7 @@ function Field({
         autoComplete={autoComplete}
         onChange={(e) => onChange(e.target.value)}
         aria-invalid={!!error}
-        className={`mt-2 h-14 w-full rounded-2xl border bg-background px-4 text-sm outline-none transition-colors duration-500 focus:border-taupe ${
+        className={`mt-2 h-14 w-full rounded-2xl border bg-background/50 px-4 backdrop-blur-md text-sm outline-none transition-colors duration-500 focus:border-taupe ${
           error ? "border-destructive" : "border-border"
         }`}
       />
@@ -367,7 +367,7 @@ function Calendar({
   const leading = (startOfMonth(month).getDay() + 6) % 7;
 
   return (
-    <div className="rounded-3xl border border-border/80 bg-background/70 p-5 sm:p-6">
+    <div className="glass-inset rounded-3xl p-5 sm:p-6">
       <div className="flex items-center justify-between">
         <button
           type="button"
@@ -440,7 +440,7 @@ function SuccessPanel({
   name: string;
 }) {
   return (
-    <div className="animate-rise rounded-[2rem] border border-border/80 bg-card p-8 text-center shadow-soft sm:p-14">
+    <div className="animate-rise glass-panel rounded-[2rem] p-8 text-center sm:p-14">
       <svg viewBox="0 0 120 120" className="mx-auto h-28 w-28 text-taupe" fill="none">
         <circle
           cx="60"
@@ -474,7 +474,7 @@ function SuccessPanel({
         ].map(([k, v]) => (
           <div
             key={k}
-            className="flex items-center justify-between rounded-2xl border border-border/70 bg-background/70 px-5 py-4"
+            className="glass-inset flex items-center justify-between rounded-2xl px-5 py-4"
           >
             <span className="eyebrow">{k}</span>
             <span className="font-display text-lg">{v}</span>

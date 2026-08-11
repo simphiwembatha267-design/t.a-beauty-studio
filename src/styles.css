@@ -273,3 +273,18 @@
     display: none;
   }
 }
+
+@utility glass-panel {
+  background: color-mix(in oklab, var(--card) 55%, transparent);
+  backdrop-filter: blur(28px) saturate(150%);
+  border: 1px solid color-mix(in oklab, var(--foreground) 10%, transparent);
+  box-shadow:
+    0 24px 60px -24px color-mix(in oklab, var(--ink) 32%, transparent),
+    inset 0 1px 0 color-mix(in oklab, white 55%, transparent);
+}
+
+@utility glass-inset {
+  background: color-mix(in oklab, var(--background) 42%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--foreground) 8%, transparent);
+}
