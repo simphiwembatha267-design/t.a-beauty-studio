@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Instagram, Phone, Menu, X, CalendarHeart } from "lucide-react";
-import logo from "@/assets/ta-beauty-studio-logo.png.asset.json";
+import logo from "@/assets/ta-beauty-studio-logo-transparent.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
 const links = [
