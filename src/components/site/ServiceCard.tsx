@@ -26,12 +26,12 @@ export function ServiceCard({ service }: { service: Service }) {
   const Icon = icons[service.icon as keyof typeof icons] ?? Sparkles;
 
   return (
-    <article className="card-lift group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border/80 bg-card p-7">
+    <article className="card-lift glass-panel group relative flex h-full flex-col overflow-hidden rounded-3xl p-7">
       <div
         aria-hidden
         className="absolute -right-10 -top-10 h-32 w-32 rounded-full blush-veil opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-60"
       />
-      <span className="grid h-12 w-12 place-items-center rounded-2xl border border-border/70 bg-secondary/60 text-taupe transition-colors duration-500 group-hover:border-blush">
+      <span className="glass-inset grid h-12 w-12 place-items-center rounded-2xl text-taupe transition-colors duration-500 group-hover:border-blush">
         <Icon className="h-5 w-5" strokeWidth={1.4} />
       </span>
       <h3 className="mt-6 text-3xl">{service.name}</h3>
