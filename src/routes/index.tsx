@@ -39,75 +39,40 @@ function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden pt-28 sm:pt-32 lg:pt-36">
-        <MoonDecor />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
+      <section className="relative overflow-hidden">
+        <div className="mx-auto flex min-h-[88svh] max-w-3xl flex-col items-center justify-center px-6 pt-32 pb-24 text-center sm:pt-40 sm:pb-32">
           <div className="animate-rise">
-  <span className="eyebrow">Morningside · Durban</span>
+            <span className="eyebrow">Morningside · Durban</span>
 
-  <h1 className="mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-    Beauty,
-    <span className="block italic text-taupe">Beautifully Done.</span>
-  </h1>
+            <h1 className="mt-8 text-[2.75rem] font-medium leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+              Beauty,
+              <span className="block text-taupe">Beautifully Done.</span>
+            </h1>
 
-  <p className="mt-4 text-sm tracking-[0.16em] uppercase text-muted-foreground">
-    T.A Beauty Studio
-  </p>
+            <p className="mt-8 text-[0.68rem] tracking-[0.28em] uppercase text-muted-foreground">
+              T.A Beauty Studio
+            </p>
 
-  <p className="mt-6 text-sm tracking-[0.16em] uppercase text-muted-foreground">
-    Hair · Braids · Nails · Makeup · Beauty Treatments
-  </p>
-
-  <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-    A refined beauty studio in the heart of Morningside, Durban,
-    where expert beauty services meet a calm, elevated experience.
-  </p>
-
-  <div className="mt-9 flex flex-wrap gap-3">
-    <Link
-      to="/book"
-      className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-primary-foreground transition-all duration-500 hover:bg-ink hover:shadow-soft"
-    >
-      Book Appointment <ArrowRight className="h-4 w-4" />
-    </Link>
-
-    <Link
-      to="/services"
-      className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-8 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-foreground transition-all duration-500 hover:border-blush"
-    >
-      View Services
-    </Link>
-  </div>
-
-  <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-4 text-xs text-muted-foreground">
-    <div className="flex items-center gap-2">
-      <MapPin className="h-4 w-4 text-taupe" />
-      <dt className="sr-only">Location</dt>
-      <dd>Morningside, Durban</dd>
-    </div>
-
-    <div className="flex items-center gap-2">
-      <Clock className="h-4 w-4 text-taupe" />
-      <dt className="sr-only">Hours</dt>
-      <dd>Mon – Fri 08:30 – 18:00 · Sat – Sun 08:30 – 19:00</dd>
-    </div>
-  </dl>
-</div>
-
-          <div className="relative">
-            <div className="overflow-hidden rounded-[2.5rem] border border-border/70 shadow-soft">
-              <img
-                src={heroImg}
-                alt="The calm cream and beige interior of Moonlight Beauty Salon"
-                width={1600}
-                height={1200}
-                className="h-[52vh] w-full object-cover sm:h-[62vh] lg:h-[72vh]"
-              />
+            <div className="mt-14">
+              <Link
+                to="/book"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-9 py-4 text-[0.72rem] tracking-[0.2em] uppercase text-primary-foreground transition-all duration-500 hover:bg-ink hover:shadow-soft"
+              >
+                Book Appointment <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
-            <div className="absolute -bottom-6 left-4 rounded-3xl border border-border/70 bg-card/90 px-6 py-4 backdrop-blur-md sm:left-8">
-              <p className="eyebrow">Walk in as you are</p>
-              <p className="mt-1 font-display text-2xl">Leave glowing</p>
-            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="overflow-hidden rounded-[2.5rem] border border-border/70 shadow-soft">
+            <img
+              src={heroImg}
+              alt="The calm cream and beige interior of T.A Beauty Studio"
+              width={1600}
+              height={1200}
+              className="h-[46vh] w-full object-cover sm:h-[60vh]"
+            />
           </div>
         </div>
       </section>
