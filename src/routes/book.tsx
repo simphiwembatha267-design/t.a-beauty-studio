@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 import { BookingFlow } from "@/components/booking/BookingFlow";
 import { MoonDecor } from "@/components/site/MoonDecor";
+import { AuroraFog } from "@/components/site/AuroraFog";
 
 export const Route = createFileRoute("/book")({
   validateSearch: z.object({ service: z.string().optional() }),
@@ -29,13 +30,10 @@ function BookPage() {
   return (
     <section className="relative overflow-hidden pt-32 sm:pt-40">
       <MoonDecor />
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="animate-float-slow absolute left-[18%] top-[28%] h-[26rem] w-[26rem] -translate-x-1/2 rounded-full bg-taupe opacity-70 blur-[90px]" />
-        <div className="animate-drift absolute right-[6%] top-[55%] h-[22rem] w-[22rem] rounded-full bg-ink opacity-25 blur-[100px]" />
-        <div className="animate-float-slow absolute left-[55%] top-[12%] h-64 w-64 rounded-full bg-blush opacity-90 blur-[80px]" />
-      </div>
+      <AuroraFog />
 
       <div className="relative mx-auto max-w-4xl px-5 pb-24 sm:px-8 lg:pb-32">
+
 
         <div className="mb-10 text-center">
           <span className="eyebrow">Booking</span>

@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MoonDecor } from "@/components/site/MoonDecor";
+import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { services } from "@/lib/salon-data";
@@ -38,8 +39,9 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="relative overflow-hidden mx-auto max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
+        <AuroraFog />
+        <div className="relative grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.id} delay={i * 60}>
               <ServiceCard service={s} />

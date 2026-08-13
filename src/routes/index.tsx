@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, MapPin, Clock } from "lucide-react";
 import heroImg from "@/assets/hero-salon.jpg";
 import { MoonDecor } from "@/components/site/MoonDecor";
+import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { GalleryMasonry } from "@/components/site/GalleryMasonry";
@@ -127,15 +128,16 @@ function Home() {
 
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" id="services">
-        <Reveal className="max-w-2xl">
+      <section className="relative overflow-hidden mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" id="services">
+        <AuroraFog />
+        <Reveal className="relative max-w-2xl">
           <span className="eyebrow">The Menu</span>
           <h2 className="mt-4 text-4xl sm:text-5xl">Crafted services, softly delivered</h2>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             Every treatment begins with a consultation and ends with a finish you can feel.
           </p>
         </Reveal>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="relative mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.slice(0, 6).map((s, i) => (
             <Reveal key={s.id} delay={i * 70}>
               <ServiceCard service={s} />
