@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, MapPin, Clock } from "lucide-react";
 import heroImg from "@/assets/hero-salon.jpg";
 import { MoonDecor } from "@/components/site/MoonDecor";
+import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { GalleryMasonry } from "@/components/site/GalleryMasonry";
@@ -127,7 +128,8 @@ function Home() {
 
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" id="services">
+      <section className="relative overflow-hidden mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" id="services">
+        <AuroraFog />
         <Reveal className="max-w-2xl">
           <span className="eyebrow">The Menu</span>
           <h2 className="mt-4 text-4xl sm:text-5xl">Crafted services, softly delivered</h2>

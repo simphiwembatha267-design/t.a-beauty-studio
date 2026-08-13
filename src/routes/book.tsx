@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 import { BookingFlow } from "@/components/booking/BookingFlow";
 import { MoonDecor } from "@/components/site/MoonDecor";
+import { AuroraFog } from "@/components/site/AuroraFog";
 
 export const Route = createFileRoute("/book")({
   validateSearch: z.object({ service: z.string().optional() }),
