@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, MapPin } from "lucide-react";
-import heroImg from "@/assets/hero-salon.jpg";
+import heroImg from "@/assets/hero-beauty-studio.jpg";
 import { MoonDecor } from "@/components/site/MoonDecor";
 import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
