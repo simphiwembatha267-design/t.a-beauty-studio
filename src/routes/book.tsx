@@ -28,22 +28,19 @@ function BookPage() {
   const { service } = Route.useSearch();
 
   return (
-    <section className="relative overflow-hidden pt-32 sm:pt-40">
+    <section className="relative overflow-hidden pt-24 sm:pt-28">
       <MoonDecor />
       <AuroraFog />
 
       <div className="relative mx-auto max-w-4xl px-5 pb-24 sm:px-8 lg:pb-32">
-
-
-        <div className="mb-10 text-center">
+        <div className="mb-5 sm:mb-6">
           <span className="eyebrow">Booking</span>
-          <h1 className="mt-5 text-5xl sm:text-6xl">Reserve your moment</h1>
-          <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-            Six gentle steps. No forms to wrestle with.
-          </p>
+          <h1 className="mt-2 text-2xl sm:text-3xl">Book your appointment</h1>
+          <p className="mt-1 text-sm text-muted-foreground">Choose a service to begin.</p>
         </div>
         <BookingFlow {...(service ? { initialService: service } : {})} />
       </div>
     </section>
+
   );
 }
