@@ -116,12 +116,12 @@ export function SiteNav() {
 </a>
 
           <Link
-            to="/book"
-            onClick={() => setOpen(false)}
-            className="flex items-center justify-center gap-2 rounded-full bg-primary py-4 text-xs tracking-[0.16em] uppercase text-primary-foreground"
-          >
-            <CalendarHeart className="h-4 w-4" /> Book Now
-          </Link>
+  to="/book"
+  onClick={() => setOpen(false)}
+  className="flex items-center justify-center rounded-full bg-primary px-4 py-4 text-[0.68rem] tracking-[0.16em] uppercase text-primary-foreground"
+>
+  Book Appointment →
+</Link>
         </div>
       </div>
     </div>
