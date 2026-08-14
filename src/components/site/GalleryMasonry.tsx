@@ -3,7 +3,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { gallery, type GalleryItem } from "@/lib/salon-data";
 import { Reveal } from "./Reveal";
 
-const categories = ["All", "Hair", "Braids", "Nails", "Makeup", "Wigs"] as const;
+const categories = ["All", "Hair", "Braids", "Nails"] as const;
 
 export function GalleryMasonry({ limit }: { limit?: number }) {
   const [filter, setFilter] = useState<(typeof categories)[number]>("All");
