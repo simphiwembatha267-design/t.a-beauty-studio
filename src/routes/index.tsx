@@ -2,13 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, MapPin } from "lucide-react";
 import heroImg from "@/assets/hero-beauty-studio.jpg";
 import { MoonDecor } from "@/components/site/MoonDecor";
-import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
-import { ServiceCard } from "@/components/site/ServiceCard";
 import { GalleryMasonry } from "@/components/site/GalleryMasonry";
 import { SalonStrip } from "@/components/site/SalonStrip";
 
-import { services, testimonials, salon } from "@/lib/salon-data";
+import { testimonials, salon } from "@/lib/salon-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
