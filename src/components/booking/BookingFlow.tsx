@@ -152,7 +152,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                   type="button"
                   onClick={() => setSpecialist(specialist?.id === p.id ? null : p)}
                   aria-pressed={specialist?.id === p.id}
-                  className={`flex items-center gap-3 rounded-2xl border px-3 py-2.5 text-left transition-all duration-500 active:scale-[0.98] ${
+                  className={`flex min-w-0 items-center gap-3 rounded-2xl border px-3 py-2.5 text-left transition-all duration-500 active:scale-[0.98] ${
                     specialist?.id === p.id
                       ? "border-taupe bg-secondary/70"
                       : "glass-inset hover:border-blush"
