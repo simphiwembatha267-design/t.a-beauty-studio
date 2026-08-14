@@ -90,13 +90,15 @@ export function SiteNav() {
         </ul>
         <div className="mt-6 grid grid-cols-3 gap-3">
           <a
-            href={salon.instagram}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="flex items-center justify-center gap-2 rounded-full border border-border py-4 text-xs tracking-[0.16em] uppercase"
-          >
-            <Instagram className="h-4 w-4" /> Instagram
-          </a>
+  href={salon.instagram}
+  target="_blank"
+  rel="noreferrer noopener"
+  aria-label="Instagram"
+  className="flex items-center justify-center gap-2 rounded-full border border-border py-4 text-xs tracking-[0.12em] uppercase text-muted-foreground transition-colors hover:text-foreground"
+>
+  <Instagram className="h-4 w-4" />
+  Instagram
+</a>
 
 <a
   href={tiktokUrl}
