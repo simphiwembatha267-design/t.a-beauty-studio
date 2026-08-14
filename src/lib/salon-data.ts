@@ -139,23 +139,22 @@ export const specialists: Specialist[] = [
 export type GalleryItem = {
   src: string;
   alt: string;
-  category: "Hair" | "Nails" | "Braids" | "Makeup" | "Wigs";
+  category: "Hair" | "Nails" | "Braids";
   ratio: string;
 };
 
 export const gallery: GalleryItem[] = [
-  { src: moon1.url, alt: "Sleek high bun styled to a glass finish", category: "Hair", ratio: "3 / 4" },
-  { src: moon4.url, alt: "Feed-in cornrows with knotless braid ponytail", category: "Braids", ratio: "3 / 4" },
-  { src: moon10.url, alt: "Chrome and nude almond gel nails", category: "Nails", ratio: "3 / 4" },
-  { src: moon2.url, alt: "Soft glam makeup with a nude satin lip", category: "Makeup", ratio: "3 / 4" },
-  { src: moon3.url, alt: "Silk pressed bob with a glossy straight finish", category: "Wigs", ratio: "3 / 4" },
-  { src: moon5.url, alt: "Sculpted cornrow pattern braided close to the scalp", category: "Braids", ratio: "3 / 4" },
-  { src: moon11.url, alt: "Hand-painted floral nail art on nude almond nails", category: "Nails", ratio: "3 / 4" },
-  { src: moon7.url, alt: "Sleek pulled-back ponytail with a laid hairline", category: "Hair", ratio: "3 / 4" },
-  { src: moon6.url, alt: "Swirled cornrow braiding detail from above", category: "Braids", ratio: "3 / 4" },
-  { src: moon8.url, alt: "Long straight ponytail install styled sleek", category: "Wigs", ratio: "3 / 4" },
-  { src: moon9.url, alt: "Bridal soft glam with a low chignon", category: "Makeup", ratio: "3 / 4" },
-  { src: moon12.url, alt: "Polished soft glam finish with defined brows", category: "Makeup", ratio: "3 / 4" },
+  { src: hair1.url, alt: "Knotless braids with curly ends styled at T.A Beauty Studio", category: "Braids", ratio: "3 / 4" },
+  { src: hair2.url, alt: "Boho knotless braids paired with long green french nails", category: "Braids", ratio: "3 / 4" },
+  { src: nails1.url, alt: "Long almond french tip nails with a soft nude base", category: "Nails", ratio: "3 / 4" },
+  { src: hair3.url, alt: "Sleek jet black silk press with a glossy straight finish", category: "Hair", ratio: "3 / 4" },
+  { src: nails2.url, alt: "Nude pink almond nails with hand-painted accent art", category: "Nails", ratio: "3 / 4" },
+  { src: hair4.url, alt: "Straight sleek install styled with a side part", category: "Hair", ratio: "3 / 4" },
+  { src: hair5.url, alt: "Honey blonde highlights on a straight blowout", category: "Hair", ratio: "3 / 4" },
+  { src: nails3.url, alt: "Pearl-detail pedicure with soft pink toe nails", category: "Nails", ratio: "3 / 4" },
+  { src: hair6.url, alt: "Caramel money-piece highlights styled bone straight", category: "Hair", ratio: "3 / 4" },
+  { src: nails4.url, alt: "Glossy pearl embellished pedicure finish", category: "Nails", ratio: "3 / 4" },
+  { src: hair7.url, alt: "Blonde highlighted sleek hair styled in the studio chair", category: "Hair", ratio: "3 / 4" },
 ];
 
 
