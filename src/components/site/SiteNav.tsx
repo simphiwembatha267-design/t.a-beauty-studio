@@ -14,6 +14,8 @@ const links = [
   { to: "/contact", label: "Contact" },
 ] as const;
 
+const tiktokUrl = "https://www.tiktok.com/@tabeautystudio_";
+
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
