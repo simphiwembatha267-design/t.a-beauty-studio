@@ -80,7 +80,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
     <div className="glass-panel rounded-[2rem] p-4 sm:p-7">
       {/* Progress */}
       <ol
-        className="sticky top-[4.5rem] z-20 -mx-4 flex items-center gap-2 overflow-x-auto rounded-2xl bg-background/50 px-4 py-2 backdrop-blur-md sm:-mx-7 sm:px-7"
+        className="flex items-center gap-2 overflow-x-auto rounded-2xl bg-background/40 px-3 py-2 backdrop-blur-md"
         aria-label="Booking steps"
       >
         {steps.map((label, i) => (
