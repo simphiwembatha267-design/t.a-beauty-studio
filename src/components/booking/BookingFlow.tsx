@@ -307,10 +307,11 @@ function StepShell({
 }) {
   return (
     <div>
-      <h2 className="text-3xl sm:text-4xl">{title}</h2>
-      {hint && <p className="mt-2 text-sm text-muted-foreground">{hint}</p>}
-      <div className="mt-7">{children}</div>
+      <h2 className="text-xl sm:text-2xl">{title}</h2>
+      {hint && <p className="mt-1 text-xs text-muted-foreground">{hint}</p>}
+      <div className="mt-4">{children}</div>
     </div>
+
   );
 }
 
