@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Instagram, Phone, Menu, X, CalendarHeart } from "lucide-react";
+import { Instagram, Menu, X, CalendarHeart } from "lucide-react";
 import logo from "@/assets/ta-beauty-studio-logo-transparent.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
@@ -173,12 +173,21 @@ export function SiteNav() {
 
         <div className="flex items-center gap-2 lg:hidden">
           <a
-            href={salon.phoneHref}
-            aria-label="Call the salon"
-            className="grid h-11 w-11 place-items-center rounded-full border border-border/80 bg-card/70 text-foreground"
-          >
-            <Phone className="h-4 w-4" />
-          </a>
+  href={salon.whatsapp}
+  target="_blank"
+  rel="noreferrer noopener"
+  aria-label="Chat with T.A Beauty Studio on WhatsApp"
+  className="grid h-11 w-11 place-items-center rounded-full border border-border/80 bg-card/70 text-foreground"
+>
+  <svg
+    viewBox="0 0 24 24"
+    className="h-5 w-5"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M12.04 2a9.93 9.93 0 0 0-8.59 14.9L2 22l5.27-1.38A9.93 9.93 0 1 0 12.04 2Zm0 18.1a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3.13.82.84-3.05-.2-.31A8.1 8.1 0 1 1 12.04 20.1Zm4.45-6.08c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.8-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.68 2.57 4.07 3.6.57.25 1.01.4 1.36.51.57.18 1.09.16 1.5.1.46-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z" />
+  </svg>
+</a>
           <button
             type="button"
             onClick={() => setOpen(true)}
