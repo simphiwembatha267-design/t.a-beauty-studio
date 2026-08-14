@@ -77,13 +77,16 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
   };
 
   return (
-    <div className="glass-panel rounded-[2rem] p-5 sm:p-9">
+    <div className="glass-panel rounded-[2rem] p-4 sm:p-7">
       {/* Progress */}
-      <ol className="flex items-center gap-2 overflow-x-auto pb-1" aria-label="Booking steps">
+      <ol
+        className="flex items-center gap-2 overflow-x-auto rounded-2xl bg-background/40 px-3 py-2 backdrop-blur-md"
+        aria-label="Booking steps"
+      >
         {steps.map((label, i) => (
           <li key={label} className="flex min-w-0 flex-1 items-center gap-2">
             <span
-              className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border text-[0.7rem] transition-all duration-500 ${
+              className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[0.65rem] transition-all duration-500 ${
                 i < step
                   ? "border-transparent bg-primary text-primary-foreground"
                   : i === step
@@ -91,10 +94,10 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                     : "border-border text-muted-foreground"
               }`}
             >
-              {i < step ? <Check className="h-3.5 w-3.5" /> : i + 1}
+              {i < step ? <Check className="h-3 w-3" /> : i + 1}
             </span>
             <span
-              className={`hidden truncate text-[0.68rem] tracking-[0.16em] uppercase sm:block ${
+              className={`hidden truncate text-[0.62rem] tracking-[0.16em] uppercase sm:block ${
                 i === step ? "text-foreground" : "text-muted-foreground"
               }`}
             >
@@ -105,10 +108,10 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
         ))}
       </ol>
 
-      <div key={step} className="animate-rise pt-8">
+      <div key={step} className="animate-rise pt-5">
         {step === 0 && (
           <StepShell title="Which service are you here for?" hint="Choose one to begin.">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((s) => (
                 <button
                   key={s.id}
@@ -118,17 +121,19 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                     setStep(1);
                   }}
                   aria-pressed={service?.id === s.id}
-                  className={`group rounded-3xl border p-5 text-left transition-all duration-500 active:scale-[0.98] ${
+                  className={`group relative rounded-2xl border px-4 py-3 text-left transition-all duration-500 active:scale-[0.98] ${
                     service?.id === s.id
                       ? "border-taupe bg-secondary/70"
                       : "glass-inset hover:border-blush hover:bg-secondary/40"
                   }`}
                 >
-                  <h3 className="text-2xl">{s.name}</h3>
-                  <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
-                    {s.description}
-                  </p>
-                  <p className="mt-4 text-[0.68rem] tracking-[0.14em] uppercase text-muted-foreground">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="truncate text-lg leading-tight">{s.name}</h3>
+                    {service?.id === s.id && (
+                      <Check className="h-4 w-4 shrink-0 text-taupe" />
+                    )}
+                  </div>
+                  <p className="mt-1 text-[0.68rem] tracking-[0.12em] uppercase text-muted-foreground">
                     From R{s.from} · {s.duration}
                   </p>
                 </button>
@@ -137,37 +142,41 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
           </StepShell>
         )}
 
+
         {step === 1 && (
           <StepShell title="Choose your specialist" hint="Optional — we can also match you with the next available artist.">
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-2 sm:grid-cols-2">
               {specialists.map((p) => (
                 <button
                   key={p.id}
                   type="button"
                   onClick={() => setSpecialist(specialist?.id === p.id ? null : p)}
                   aria-pressed={specialist?.id === p.id}
-                  className={`flex items-center gap-4 rounded-3xl border p-4 text-left transition-all duration-500 active:scale-[0.98] ${
+                  className={`flex min-w-0 items-center gap-3 rounded-2xl border px-3 py-2.5 text-left transition-all duration-500 active:scale-[0.98] ${
                     specialist?.id === p.id
                       ? "border-taupe bg-secondary/70"
                       : "glass-inset hover:border-blush"
                   }`}
                 >
-                  <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl blush-veil font-display text-xl text-ink">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl blush-veil font-display text-sm text-ink">
                     {p.initials}
                   </span>
-                  <span className="min-w-0">
-                    <span className="block truncate font-display text-xl">{p.name}</span>
-                    <span className="mt-0.5 block text-xs text-muted-foreground">{p.role}</span>
-                    <span className="mt-1 block text-xs text-muted-foreground">
-                      {p.experience} · {p.speciality}
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center justify-between gap-2">
+                      <span className="truncate font-display text-base">{p.name}</span>
+                      <span className="inline-flex shrink-0 items-center gap-1 text-xs text-foreground">
+                        <Star className="h-3 w-3 fill-current text-taupe" /> {p.rating.toFixed(1)}
+                      </span>
                     </span>
-                    <span className="mt-1.5 inline-flex items-center gap-1 text-xs text-foreground">
-                      <Star className="h-3.5 w-3.5 fill-current text-taupe" /> {p.rating.toFixed(1)}
+                    <span className="block truncate text-xs text-muted-foreground">
+                      {p.role} · {p.experience} · {p.speciality}
                     </span>
                   </span>
+                  {specialist?.id === p.id && <Check className="h-4 w-4 shrink-0 text-taupe" />}
                 </button>
               ))}
             </div>
+
           </StepShell>
         )}
 
@@ -264,7 +273,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
         )}
       </div>
 
-      <div className="mt-9 flex items-center justify-between gap-3">
+      <div className="mt-6 flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => setStep((s) => Math.max(0, s - 1))}
@@ -298,10 +307,11 @@ function StepShell({
 }) {
   return (
     <div>
-      <h2 className="text-3xl sm:text-4xl">{title}</h2>
-      {hint && <p className="mt-2 text-sm text-muted-foreground">{hint}</p>}
-      <div className="mt-7">{children}</div>
+      <h2 className="text-xl sm:text-2xl">{title}</h2>
+      {hint && <p className="mt-1 text-xs text-muted-foreground">{hint}</p>}
+      <div className="mt-4">{children}</div>
     </div>
+
   );
 }
 

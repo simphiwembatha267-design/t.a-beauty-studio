@@ -2,13 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Star, MapPin } from "lucide-react";
 import heroImg from "@/assets/hero-beauty-studio.jpg";
 import { MoonDecor } from "@/components/site/MoonDecor";
-import { AuroraFog } from "@/components/site/AuroraFog";
 import { Reveal } from "@/components/site/Reveal";
-import { ServiceCard } from "@/components/site/ServiceCard";
 import { GalleryMasonry } from "@/components/site/GalleryMasonry";
 import { SalonStrip } from "@/components/site/SalonStrip";
 
-import { services, testimonials, salon } from "@/lib/salon-data";
+import { testimonials, salon } from "@/lib/salon-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -92,32 +90,23 @@ function Home() {
       </section>
 
 
-      {/* Services */}
-      <section className="relative overflow-hidden mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" id="services">
-        <AuroraFog />
-        <Reveal className="relative max-w-2xl">
-          <span className="eyebrow">The Menu</span>
-          <h2 className="mt-4 text-4xl sm:text-5xl">Crafted services, softly delivered</h2>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Every treatment begins with a consultation and ends with a finish you can feel.
-          </p>
-        </Reveal>
-        <div className="relative mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {services.slice(0, 6).map((s, i) => (
-            <Reveal key={s.id} delay={i * 70}>
-              <ServiceCard service={s} />
-            </Reveal>
-          ))}
-        </div>
-        <Reveal className="mt-10">
+      {/* Services touchpoint */}
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8" id="services">
+        <Reveal className="flex flex-wrap items-center justify-between gap-6 border-y border-border/70 py-6">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.72rem] tracking-[0.2em] uppercase text-muted-foreground">
+            <span className="text-foreground">Hair</span>
+            <span className="text-foreground">Beauty</span>
+            <span className="text-foreground">Nails</span>
+          </div>
           <Link
             to="/services"
             className="inline-flex items-center gap-2 text-[0.72rem] tracking-[0.2em] uppercase text-foreground"
           >
-            All services <ArrowRight className="h-4 w-4" />
+            View services <ArrowRight className="h-4 w-4" />
           </Link>
         </Reveal>
       </section>
+
 
       {/* Gallery preview */}
       <section className="veil border-y border-border/70 py-20 lg:py-28">
