@@ -88,7 +88,7 @@ export function SiteNav() {
             </li>
           ))}
         </ul>
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-3 gap-3">
           <a
             href={salon.instagram}
             target="_blank"
