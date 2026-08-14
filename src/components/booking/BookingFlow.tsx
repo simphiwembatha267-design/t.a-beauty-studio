@@ -77,13 +77,16 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
   };
 
   return (
-    <div className="glass-panel rounded-[2rem] p-5 sm:p-9">
+    <div className="glass-panel rounded-[2rem] p-4 sm:p-7">
       {/* Progress */}
-      <ol className="flex items-center gap-2 overflow-x-auto pb-1" aria-label="Booking steps">
+      <ol
+        className="sticky top-[4.5rem] z-20 -mx-4 flex items-center gap-2 overflow-x-auto rounded-2xl bg-background/50 px-4 py-2 backdrop-blur-md sm:-mx-7 sm:px-7"
+        aria-label="Booking steps"
+      >
         {steps.map((label, i) => (
           <li key={label} className="flex min-w-0 flex-1 items-center gap-2">
             <span
-              className={`grid h-8 w-8 shrink-0 place-items-center rounded-full border text-[0.7rem] transition-all duration-500 ${
+              className={`grid h-7 w-7 shrink-0 place-items-center rounded-full border text-[0.65rem] transition-all duration-500 ${
                 i < step
                   ? "border-transparent bg-primary text-primary-foreground"
                   : i === step
@@ -91,10 +94,10 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                     : "border-border text-muted-foreground"
               }`}
             >
-              {i < step ? <Check className="h-3.5 w-3.5" /> : i + 1}
+              {i < step ? <Check className="h-3 w-3" /> : i + 1}
             </span>
             <span
-              className={`hidden truncate text-[0.68rem] tracking-[0.16em] uppercase sm:block ${
+              className={`hidden truncate text-[0.62rem] tracking-[0.16em] uppercase sm:block ${
                 i === step ? "text-foreground" : "text-muted-foreground"
               }`}
             >
@@ -105,10 +108,10 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
         ))}
       </ol>
 
-      <div key={step} className="animate-rise pt-8">
+      <div key={step} className="animate-rise pt-5">
         {step === 0 && (
           <StepShell title="Which service are you here for?" hint="Choose one to begin.">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((s) => (
                 <button
                   key={s.id}
@@ -118,17 +121,19 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
                     setStep(1);
                   }}
                   aria-pressed={service?.id === s.id}
-                  className={`group rounded-3xl border p-5 text-left transition-all duration-500 active:scale-[0.98] ${
+                  className={`group relative rounded-2xl border px-4 py-3 text-left transition-all duration-500 active:scale-[0.98] ${
                     service?.id === s.id
                       ? "border-taupe bg-secondary/70"
                       : "glass-inset hover:border-blush hover:bg-secondary/40"
                   }`}
                 >
-                  <h3 className="text-2xl">{s.name}</h3>
-                  <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
-                    {s.description}
-                  </p>
-                  <p className="mt-4 text-[0.68rem] tracking-[0.14em] uppercase text-muted-foreground">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="truncate text-lg leading-tight">{s.name}</h3>
+                    {service?.id === s.id && (
+                      <Check className="h-4 w-4 shrink-0 text-taupe" />
+                    )}
+                  </div>
+                  <p className="mt-1 text-[0.68rem] tracking-[0.12em] uppercase text-muted-foreground">
                     From R{s.from} · {s.duration}
                   </p>
                 </button>
@@ -136,6 +141,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
             </div>
           </StepShell>
         )}
+
 
         {step === 1 && (
           <StepShell title="Choose your specialist" hint="Optional — we can also match you with the next available artist.">
