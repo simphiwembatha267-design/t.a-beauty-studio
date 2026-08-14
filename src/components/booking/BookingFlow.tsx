@@ -273,7 +273,7 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
         )}
       </div>
 
-      <div className="mt-9 flex items-center justify-between gap-3">
+      <div className="mt-6 flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => setStep((s) => Math.max(0, s - 1))}
