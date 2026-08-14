@@ -145,35 +145,38 @@ export function BookingFlow({ initialService }: { initialService?: string }) {
 
         {step === 1 && (
           <StepShell title="Choose your specialist" hint="Optional — we can also match you with the next available artist.">
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-2 sm:grid-cols-2">
               {specialists.map((p) => (
                 <button
                   key={p.id}
                   type="button"
                   onClick={() => setSpecialist(specialist?.id === p.id ? null : p)}
                   aria-pressed={specialist?.id === p.id}
-                  className={`flex items-center gap-4 rounded-3xl border p-4 text-left transition-all duration-500 active:scale-[0.98] ${
+                  className={`flex items-center gap-3 rounded-2xl border px-3 py-2.5 text-left transition-all duration-500 active:scale-[0.98] ${
                     specialist?.id === p.id
                       ? "border-taupe bg-secondary/70"
                       : "glass-inset hover:border-blush"
                   }`}
                 >
-                  <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl blush-veil font-display text-xl text-ink">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl blush-veil font-display text-sm text-ink">
                     {p.initials}
                   </span>
-                  <span className="min-w-0">
-                    <span className="block truncate font-display text-xl">{p.name}</span>
-                    <span className="mt-0.5 block text-xs text-muted-foreground">{p.role}</span>
-                    <span className="mt-1 block text-xs text-muted-foreground">
-                      {p.experience} · {p.speciality}
+                  <span className="min-w-0 flex-1">
+                    <span className="flex items-center justify-between gap-2">
+                      <span className="truncate font-display text-base">{p.name}</span>
+                      <span className="inline-flex shrink-0 items-center gap-1 text-xs text-foreground">
+                        <Star className="h-3 w-3 fill-current text-taupe" /> {p.rating.toFixed(1)}
+                      </span>
                     </span>
-                    <span className="mt-1.5 inline-flex items-center gap-1 text-xs text-foreground">
-                      <Star className="h-3.5 w-3.5 fill-current text-taupe" /> {p.rating.toFixed(1)}
+                    <span className="block truncate text-xs text-muted-foreground">
+                      {p.role} · {p.experience} · {p.speciality}
                     </span>
                   </span>
+                  {specialist?.id === p.id && <Check className="h-4 w-4 shrink-0 text-taupe" />}
                 </button>
               ))}
             </div>
+
           </StepShell>
         )}
 
