@@ -188,7 +188,7 @@ export const salon = {
   phoneHref: "tel:+27658703801",
   whatsapp: "https://wa.me/27658703801",
   email: "",
-  instagram: "https://instagram.com/t.a_beautystudio_",
+  instagram: "https://instagram.com/t.a_beautystudio",
   address: [
     "87 Smiso Nkwanyana Road",
     "Morningside",
