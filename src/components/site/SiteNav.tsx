@@ -88,43 +88,44 @@ export function SiteNav() {
             </li>
           ))}
         </ul>
-        <div className="mt-6 grid grid-cols-3 gap-3">
-          <a
-  href={salon.instagram}
-  target="_blank"
-  rel="noreferrer noopener"
-  aria-label="Instagram"
-  className="flex items-center justify-center gap-2 rounded-full border border-border py-4 text-xs tracking-[0.12em] uppercase text-muted-foreground transition-colors hover:text-foreground"
->
-  <Instagram className="h-4 w-4" />
-  Instagram
-</a>
+        <div className="mt-6 flex items-center justify-between border-t border-border/70 pt-5">
+  <div className="flex items-center gap-5">
+    <a
+      href={salon.instagram}
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="Instagram"
+      className="text-muted-foreground transition-colors hover:text-foreground"
+    >
+      <Instagram className="h-5 w-5" />
+    </a>
 
-<a
-  href={tiktokUrl}
-  target="_blank"
-  rel="noreferrer noopener"
-  className="flex items-center justify-center gap-2 rounded-full border border-border py-4 text-xs tracking-[0.16em] uppercase"
->
-  <svg
-    viewBox="0 0 24 24"
-    className="h-4 w-4"
-    fill="currentColor"
-    aria-hidden="true"
+    <a
+      href={tiktokUrl}
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="TikTok"
+      className="text-muted-foreground transition-colors hover:text-foreground"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        className="h-5 w-5"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.91 2.91 0 1 1-2-2.75V9.4a6.36 6.36 0 1 0 5.45 6.27V8.26a8.16 8.16 0 0 0 4.77 1.52V6.69Z" />
+      </svg>
+    </a>
+  </div>
+
+  <Link
+    to="/book"
+    onClick={() => setOpen(false)}
+    className="rounded-full bg-primary px-5 py-3 text-[0.68rem] tracking-[0.14em] uppercase text-primary-foreground transition-all duration-300 hover:bg-ink"
   >
-    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.91 2.91 0 1 1-2-2.75V9.4a6.36 6.36 0 1 0 5.45 6.27V8.26a8.16 8.16 0 0 0 4.77 1.52V6.69Z" />
-  </svg>
-  TikTok
-</a>
-
-          <Link
-  to="/book"
-  onClick={() => setOpen(false)}
-  className="flex items-center justify-center rounded-full bg-primary px-4 py-4 text-[0.68rem] tracking-[0.16em] uppercase text-primary-foreground"
->
-  Book Appointment →
-</Link>
-        </div>
+    Book Appointment →
+  </Link>
+</div>
       </div>
     </div>
   );
