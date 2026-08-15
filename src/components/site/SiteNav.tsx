@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Instagram, Menu, X, CalendarHeart } from "lucide-react";
-import logo from "@/assets/ta-beauty-studio-logo-transparent.png.asset.json";
+import logo from "@/assets/ta-beauty-studio-logo-clean.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
 const links = [
@@ -148,9 +148,9 @@ export function SiteNav() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={678}
-            height={991}
-            className="h-20 w-auto shrink-0 sm:h-24 lg:h-28"
+            width={649}
+            height={496}
+            className="h-14 w-auto shrink-0 sm:h-16 lg:h-[4.5rem]"
           />
         </Link>
 

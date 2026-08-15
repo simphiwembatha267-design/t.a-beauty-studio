@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Phone, Mail, MessageCircle } from "lucide-react";
-import logo from "@/assets/ta-beauty-studio-logo-transparent.png.asset.json";
+import logo from "@/assets/ta-beauty-studio-logo-clean.png.asset.json";
 import { salon } from "@/lib/salon-data";
 
 export function SiteFooter() {
@@ -11,10 +11,10 @@ export function SiteFooter() {
           <img
             src={logo.url}
             alt={`${salon.name} logo`}
-            width={678}
-            height={991}
+            width={649}
+            height={496}
             loading="lazy"
-            className="h-32 w-auto sm:h-36"
+            className="h-20 w-auto sm:h-24"
           />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
             A quiet, considered beauty studio in Umlazi where hair, nails and makeup are crafted
