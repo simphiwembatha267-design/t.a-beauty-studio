@@ -8,16 +8,16 @@ import { services } from "@/lib/salon-data";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services & Prices | Moonlight Beauty Salon Umlazi" },
+      { title: "Services & Prices | T.A Beauty Studio Morningside" },
       {
         name: "description",
         content:
-          "Hair, braids, dreadlocks, wigs, haircuts, nails and makeup at Moonlight Beauty Salon in Umlazi. See starting prices and treatment times.",
+          "Hair, braids, dreadlocks, wigs, haircuts, nails and makeup at T.A Beauty Studio in Morningside. See starting prices and treatment times.",
       },
-      { property: "og:title", content: "Services & Prices | Moonlight Beauty Salon" },
+      { property: "og:title", content: "Services & Prices | T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Starting prices and durations for hair, braids, nails, wigs and makeup in Umlazi.",
+        content: "Starting prices and durations for hair, braids, nails, wigs and makeup in Morningside.",
       },
     ],
   }),

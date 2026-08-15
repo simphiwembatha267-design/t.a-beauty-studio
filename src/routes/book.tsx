@@ -8,16 +8,16 @@ export const Route = createFileRoute("/book")({
   validateSearch: z.object({ service: z.string().optional() }),
   head: () => ({
     meta: [
-      { title: "Book an Appointment | Moonlight Beauty Salon" },
+      { title: "Book an Appointment | T.A Beauty Studio" },
       {
         name: "description",
         content:
-          "Book hair, braids, nails or makeup at Moonlight Beauty Salon in Umlazi. Choose your service, specialist, date and time in under a minute.",
+          "Book hair, braids, nails or makeup at T.A Beauty Studio in Morningside. Choose your service, specialist, date and time in under a minute.",
       },
-      { property: "og:title", content: "Book an Appointment | Moonlight Beauty Salon" },
+      { property: "og:title", content: "Book an Appointment | T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Choose your service, specialist, date and time at Moonlight Beauty Salon, Umlazi.",
+        content: "Choose your service, specialist, date and time at T.A Beauty Studio, Morningside.",
       },
     ],
   }),

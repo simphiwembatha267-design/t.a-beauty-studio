@@ -79,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Moonlight Beauty Salon | Hair, Braids & Nails in Umlazi" },
+      { title: "T.A Beauty Studio | Hair, Braids & Nails in Morningside" },
       {
         name: "description",
         content:
-          "Moonlight Beauty Salon — hair, braids, dreadlocks, wigs, nails and makeup in a calm, luxurious Umlazi studio.",
+          "T.A Beauty Studio — hair, braids, dreadlocks, wigs, nails and makeup in a calm, luxurious Morningside studio.",
       },
-      { name: "author", content: "Moonlight Beauty Salon" },
+      { name: "author", content: "T.A Beauty Studio" },
       { name: "theme-color", content: "#F8F4EE" },
-      { property: "og:title", content: "Moonlight Beauty Salon" },
+      { property: "og:title", content: "T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Professional hair, braids, nails and makeup in Umlazi, KwaZulu-Natal.",
+        content: "Professional hair, braids, nails and makeup in Morningside, Durban.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

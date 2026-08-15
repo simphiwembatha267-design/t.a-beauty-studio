@@ -7,16 +7,16 @@ import { salon } from "@/lib/salon-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Location | Moonlight Beauty Salon Umlazi" },
+      { title: "Contact & Location | T.A Beauty Studio Morningside" },
       {
         name: "description",
         content:
-          "Find Moonlight Beauty Salon at 223 Kwamnyandu Shopping Centre, 341 Griffiths Mxenge Highway, Umlazi. Open daily 09:00–18:00. Call or WhatsApp us.",
+          "Find T.A Beauty Studio at 87 Smiso Nkwanyana Road, Morningside, Durban. Open daily 09:00–18:00. Call or WhatsApp us.",
       },
-      { property: "og:title", content: "Contact Moonlight Beauty Salon" },
+      { property: "og:title", content: "Contact T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Kwamnyandu Shopping Centre, Umlazi. Open daily 09:00–18:00.",
+        content: "87 Smiso Nkwanyana Road, Morningside. Open daily 09:00–18:00.",
       },
     ],
   }),
@@ -46,7 +46,7 @@ function ContactPage() {
           <Reveal className="order-2 lg:order-1">
             <div className="overflow-hidden rounded-[2rem] border border-border/80 bg-card">
               <iframe
-                title="Map showing Moonlight Beauty Salon in Umlazi"
+                title="Map showing T.A Beauty Studio in Morningside"
                 src={salon.mapEmbed}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

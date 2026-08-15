@@ -473,7 +473,7 @@ function SuccessPanel({
       <h2 className="mt-6 text-4xl sm:text-5xl">Your seat is reserved</h2>
       <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
         Thank you {name.split(" ")[0]}. We will send a confirmation shortly — we cannot wait to
-        welcome you to Moonlight.
+        welcome you to T.A Beauty Studio.
       </p>
       <div className="mx-auto mt-8 grid max-w-md gap-3 text-left">
         {[

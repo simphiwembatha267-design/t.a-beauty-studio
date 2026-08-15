@@ -81,7 +81,7 @@ function Home() {
           <span className="eyebrow">Walk in as you are</span>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl">Leave glowing</h2>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            A look inside our Umlazi studio — soft light, calm corners and a chair with your name on it.
+            A look inside our Morningside studio — soft light, calm corners and a chair with your name on it.
           </p>
         </Reveal>
         <div className="mt-10">
@@ -180,7 +180,7 @@ function Home() {
               Book Appointment <ArrowRight className="h-4 w-4" />
             </Link>
             <p className="mt-8 inline-flex items-center gap-2 text-xs text-muted-foreground">
-              <MapPin className="h-4 w-4 text-taupe" /> {salon.address[0]}, Umlazi
+              <MapPin className="h-4 w-4 text-taupe" /> {salon.address[0]}, Morningside
             </p>
           </Reveal>
         </div>
