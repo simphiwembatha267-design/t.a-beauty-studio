@@ -5,16 +5,16 @@ import { GalleryMasonry } from "@/components/site/GalleryMasonry";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery | Moonlight Beauty Salon Umlazi" },
+      { title: "Gallery | T.A Beauty Studio Morningside" },
       {
         name: "description",
         content:
-          "Browse hair, braids, nails, makeup and wig transformations created at Moonlight Beauty Salon in Umlazi, KwaZulu-Natal.",
+          "Browse hair, braids, nails, makeup and wig transformations created at T.A Beauty Studio in Morningside, Durban.",
       },
-      { property: "og:title", content: "Gallery | Moonlight Beauty Salon" },
+      { property: "og:title", content: "Gallery | T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Hair, braids, nails, makeup and wig work from the Moonlight studio.",
+        content: "Hair, braids, nails, makeup and wig work from the T.A Beauty Studio.",
       },
     ],
   }),

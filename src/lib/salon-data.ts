@@ -170,7 +170,7 @@ export const testimonials = [
     name: "Refilwe S.",
     service: "Silk Press",
     quote:
-      "Moonlight feels like a spa. The shine on my hair lasted almost three weeks — I will never go anywhere else.",
+      "T.A Beauty Studio feels like a spa. The shine on my hair lasted almost three weeks — I will never go anywhere else.",
     rating: 5,
   },
   {

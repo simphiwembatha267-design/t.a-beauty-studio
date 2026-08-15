@@ -9,16 +9,16 @@ import { specialists } from "@/lib/salon-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Moonlight Beauty Salon Umlazi" },
+      { title: "About Us | T.A Beauty Studio Morningside" },
       {
         name: "description",
         content:
-          "Meet the team behind Moonlight Beauty Salon in Umlazi — our mission, our values and why clients trust us with their hair, nails and makeup.",
+          "Meet the team behind T.A Beauty Studio in Morningside — our mission, our values and why clients trust us with their hair, nails and makeup.",
       },
-      { property: "og:title", content: "About Moonlight Beauty Salon" },
+      { property: "og:title", content: "About T.A Beauty Studio" },
       {
         property: "og:description",
-        content: "Our story, values and specialists at Moonlight Beauty Salon in Umlazi.",
+        content: "Our story, values and specialists at T.A Beauty Studio in Morningside.",
       },
     ],
   }),
@@ -44,7 +44,7 @@ function AboutPage() {
               Beauty that feels like <span className="italic text-taupe">rest</span>
             </h1>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground">
-              Moonlight began with a simple idea: a salon in Umlazi where women could exhale. No
+              T.A Beauty Studio began with a simple idea: a salon in Morningside where women could exhale. No
               rush, no noise — only warm light, soft music and artists who take the time to
               understand your hair and your life.
             </p>
@@ -60,7 +60,7 @@ function AboutPage() {
           <div className="grid grid-cols-2 gap-4">
             <img
               src={heroImg}
-              alt="Styling station at Moonlight Beauty Salon"
+              alt="Styling station at T.A Beauty Studio"
               width={1600}
               height={1200}
               loading="lazy"

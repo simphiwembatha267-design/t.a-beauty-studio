@@ -20,7 +20,7 @@ export function SalonStrip() {
         <div
           className="scroll-strip -mx-5 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-3 sm:-mx-8 sm:px-8"
           role="region"
-          aria-label="Inside Moonlight Beauty Salon — scroll sideways"
+          aria-label="Inside T.A Beauty Studio — scroll sideways"
         >
           {shots.map((shot) => (
             <figure

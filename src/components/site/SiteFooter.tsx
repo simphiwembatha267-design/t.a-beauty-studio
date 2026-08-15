@@ -17,7 +17,7 @@ export function SiteFooter() {
             className="h-20 w-auto sm:h-24"
           />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            A quiet, considered beauty studio in Umlazi where hair, nails and makeup are crafted
+            A quiet, considered beauty studio in Morningside where hair, nails and makeup are crafted
             around you.
           </p>
         </div>
