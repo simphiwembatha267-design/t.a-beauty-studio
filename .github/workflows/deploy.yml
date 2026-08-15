@@ -34,6 +34,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Assemble static site
+        run: |
+          rm -rf .output/public
+          mkdir -p .output
+          cp -r dist/client .output/public
+          cp .output/public/index.html .output/public/404.html
+          touch .output/public/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -41,6 +49,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
+
 
   deploy:
     needs: build
